@@ -47,6 +47,31 @@ h1, h2, h3, h4, p {
     margin: 0 auto;
 }
 
+.overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    background-color: rgba(0,0,0,0.6);
+    cursor: pointer;
+    overflow-y: auto;
+    overflow-x: hidden;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition-duration: 0.36s;
+    white-space: nowrap;
+}
+.overlay:after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+.overlay_open {
+    opacity: 1;
+    visibility: visible;
+}
+
 @media (max-width:1024px) {
     .container {
         max-width: 840px;

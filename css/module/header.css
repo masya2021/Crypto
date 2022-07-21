@@ -37,7 +37,7 @@
     }
 
     .header__navigation_open {
-        transform: translateY(100%);   /* выкідываем із паддінгов)) */
+        transform: translateY(calc(100% - 1px));   /* выкідываем із паддінгов)) */
     }
 }
 
