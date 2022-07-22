@@ -1,4 +1,7 @@
-import "./menu.js";
-import "./modal.js";
-import "./tabs-about-us.js";
-import "./exchange-rates.js";
+import "./module/menu.js";
+import "./module/modal.js";
+import "./module/tabs-about-us.js";
+import "./module/exchange-rates.js";
+import "./module/faq.js";
+
+import { accordion } from "./module/faq.js";
